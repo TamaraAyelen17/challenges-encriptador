@@ -42,3 +42,13 @@ function btnDesencriptar() {
     image.style.backgroundImage = "none";
     parrafo.style.display = "none";
 }
+
+function btnCopiar() {
+    mensaje.select();
+    
+    navigator.clipboard.writeText(mensaje.value).then(function() {
+        console.log('Texto copiado al portapapeles');
+    }).catch(function(error) {
+        console.error('Error al copiar el texto: ', error);
+    });
+}
