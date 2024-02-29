@@ -25,3 +25,81 @@ main {
     margin-bottom: 50px;
     margin-left: 80px;
 }
+
+.container-izq {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingresar-texto {
+    resize: none;
+    border: none;
+    font-size: 32px;
+    width: 680px;
+    height: 288px;
+    margin-left: 100px;
+    margin-top: 168px;
+    cursor: pointer;
+    outline: none;
+    background-color: #F3F5FC;
+    text-transform: lowercase;
+}
+
+.ingresar-texto::placeholder {
+    color: #0A3871;
+}
+
+.info {
+    display: flex;
+    margin-top: 180px;
+    margin-left: 100px;
+    font-size: 12px;
+    color: #495057;
+    opacity: 0.8;
+    gap: 8px;
+}
+
+.txt-condicion {
+    font-size: 12px;
+    color: #495057;
+    opacity: 0.8;
+    width: 205px;
+    height:18px;
+
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 180px;
+    top: 685px;
+}
+
+.btn-encriptar {
+    background: #0A3871;
+    border-radius: 24px;
+    border: none;
+    width: 328px;
+    height: 67px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-desencriptar {
+    box-sizing: border-box;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+    cursor: pointer;
+}
