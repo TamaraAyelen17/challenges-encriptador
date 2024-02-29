@@ -21,6 +21,7 @@ function btnEncriptar() {
     textArea.value ="";
     image.style.backgroundImage = "none";
     parrafo.style.display = "none";
+    document.getElementById('btn-copiar').style.display = 'block';
 }
 
 function desencriptarLetras(texto){
@@ -41,6 +42,7 @@ function btnDesencriptar() {
     textArea.value ="";
     image.style.backgroundImage = "none";
     parrafo.style.display = "none";
+    document.getElementById('btn-copiar').style.display = 'block';
 }
 
 function btnCopiar() {
