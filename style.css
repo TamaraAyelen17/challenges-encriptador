@@ -12,6 +12,7 @@ html {
 body {
     margin-bottom: 100px;
     background: #F3F5FC;
+    min-height: 100vh;
 }
 
 .logo-header {
@@ -21,7 +22,6 @@ body {
 }
 
 main {
-    display: flex;
     margin-bottom: 50px;
     margin-left: 80px;
 }
@@ -123,6 +123,7 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 15px;
+    display: none;
 }
 
 .derecha {
@@ -193,6 +194,7 @@ main {
     display: none;
 }
 
+
 footer {
     display: flex;
     width: 100%;
@@ -210,7 +212,9 @@ footer {
     font-size: 16px;
 }
 
-@media screen and (max-width: 768px) {
+
+
+@media (max-width: 768px) {
     main {
         margin-left: 50px;
         display: flex;
@@ -230,7 +234,6 @@ footer {
     }
 
     .ingresar-texto {
-        font-size: 16px;
         margin: 20px auto;
         width: calc(100% - 40px); 
         max-width: 90%; 
@@ -287,7 +290,6 @@ footer {
         margin-top: 5px;
         position: absolute;
         width: 650px;
-        display: none;
     }
 
     .derecha {
@@ -308,4 +310,86 @@ footer {
         height: 50px;
         margin-top: 15px;
     }
+}
+
+@media (max-width: 375px) {
+    html {
+        width: 100%;
+    }
+
+    .logo-header {
+        width: 25%;
+    }
+
+    .info {
+        margin-top: 100px;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .btn-encriptar {
+        width: 90%;
+        position: absolute;
+        top: 340px;
+        left: 5px;
+    }
+
+    .btn-desencriptar {
+        width: 90%;
+        position: absolute;
+        margin-top: 80px;
+        left: 5px;
+    }
+
+    .container-der {
+        position: absolute;
+        width: 90%;
+        left: 20px;
+    }
+
+    .contenedor-txtarea {
+        display: initial;
+    }
+
+    .mensaje {
+        width: 48%;
+        margin-left: 15px;
+    }
+
+    .derecha {
+        position: absolute;
+        left: 5px;
+    }
+
+    .mensaje-h2 {
+        display: flex;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        width: 80%;
+    }
+
+    .contenedor-p-resultado {
+        width: 80%;
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    .contenedor-copiar {
+        display: flex;
+        width: 250px;
+        margin-left: 40px;
+    }
+
+    #btn-copiar {
+        width: 100%;
+    }
+ 
+    footer {
+    	height: 30px;
+        bottom: 100px;
+  	}
 }
