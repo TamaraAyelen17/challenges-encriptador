@@ -1,0 +1,393 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 100px;
+    background: #F3F5FC;
+}
+
+.logo-header {
+    padding-top: 40px;
+    padding-left: 20px;
+    width: 6%;
+}
+
+main {
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.container-izq {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingresar-texto {
+    resize: none;
+    border: none;
+    font-size: 32px;
+    width: 680px;
+    height: 288px;
+    margin-left: 100px;
+    margin-top: 168px;
+    cursor: pointer;
+    outline: none;
+    background-color: #F3F5FC;
+    text-transform: lowercase;
+}
+
+.ingresar-texto::placeholder {
+    color: #0A3871;
+}
+
+.info {
+    display: flex;
+    margin-top: 180px;
+    margin-left: 100px;
+    font-size: 12px;
+    color: #495057;
+    opacity: 0.8;
+    gap: 8px;
+}
+
+.txt-condicion {
+    font-size: 12px;
+    color: #495057;
+    opacity: 0.8;
+    width: 205px;
+    height:18px;
+
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 180px;
+    top: 685px;
+}
+
+.btn-encriptar {
+    background: #0A3871;
+    border-radius: 24px;
+    border: none;
+    width: 328px;
+    height: 67px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-desencriptar {
+    box-sizing: border-box;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container-der {
+    background-color: #FFFFFF;
+    background-image: url(Img/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 336px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    position: absolute;
+    width: 400px;
+    height: 800px;
+    left: 1000px;
+    top: 40px;
+}
+
+.contenedor-txtarea {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    display: none;
+}
+
+.derecha {
+    position: absolute;
+    bottom: 120px;
+}
+
+.mensaje {
+    display: flex;
+    width: 336px;
+    height: 220px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 24px;
+    color: #495057;
+}
+
+.contenedor-parrafo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 122px;
+    margin-left: 15px;
+}
+
+.mensaje-h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    width: 336px;
+    height: 58px;
+}
+
+.contenedor-p {
+    margin-top: 60px;
+}
+
+.contenedor-p-resultado {
+    width: 336px;
+    height: 48px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 150%;
+    color: #495057;
+    margin-top: 20px;
+}
+
+.contenedor-copiar {
+    display: flex;
+    margin-left: 30px;
+    position: absolute;
+    margin-top: 40px;
+}
+
+#btn-copiar {
+    width: 328px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    font-size: 16px;
+    background: #FFFFFF;
+    cursor: pointer;
+    display: none;
+}
+
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 80px; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #0A3871;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-footer {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+
+
+@media (max-width: 768px) {
+    main {
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-header {
+        width: 10%;
+    }
+
+    .container-izq {
+        display: flex;
+        position: absolute;
+        left: 30px;
+        top: 100px;
+    }
+
+    .ingresar-texto {
+        margin: 20px auto;
+        width: calc(100% - 40px); 
+        max-width: 90%; 
+    }
+
+    .info {
+        display: flex;
+        position: absolute;
+        top: 200px;
+        margin-left: 30px;
+    }
+
+    .botones {
+        position: static;
+        flex-direction: row;
+        gap: 20px;
+        width: calc(100% - 40px);
+        max-width: 90%;
+        margin-left: 30px;
+    }
+
+    .container-der {
+        background-image: none;
+        width: 688px;
+        height: 170px;
+        position: absolute;
+        margin-top: 50px;
+        left: 50px;
+        top: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-parrafo {
+        margin-bottom: 50px;
+    }
+
+    .mensaje {
+        width: 600px;
+        height: 80px;
+        
+    } 
+
+    .mensaje-h2 {
+        width: 380px;
+        height: 40px;
+    }
+
+    .contenedor-p-resultado {
+        width: 400px;
+        margin-top: 0;
+    }
+    .contenedor-txtarea {
+        margin-top: 5px;
+        position: absolute;
+        width: 650px;
+    }
+
+    .derecha {
+        position: absolute;
+        left: 130px;
+        top: 5px;
+    }
+
+   .contenedor-copiar {
+        margin-top: 90px;
+        position: absolute;
+        display: flex;
+        margin-left: 10px;
+    }
+
+    #btn-copiar {
+        width: 450px;
+        height: 50px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    html {
+        width: 100%;
+    }
+
+    .logo-header {
+        width: 25%;
+    }
+
+    .info {
+        margin-top: 100px;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .btn-encriptar {
+        width: 90%;
+        position: absolute;
+        top: 340px;
+        left: 5px;
+    }
+
+    .btn-desencriptar {
+        width: 90%;
+        position: absolute;
+        margin-top: 80px;
+        left: 5px;
+    }
+
+    .container-der {
+        position: absolute;
+        width: 90%;
+        left: 20px;
+    }
+
+    .contenedor-txtarea {
+        display: initial;
+    }
+
+    .mensaje {
+        width: 48%;
+        margin-left: 15px;
+    }
+
+    .derecha {
+        position: absolute;
+        left: 5px;
+    }
+
+    .mensaje-h2 {
+        display: flex;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        width: 80%;
+    }
+
+    .contenedor-p-resultado {
+        width: 80%;
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    .contenedor-copiar {
+        display: flex;
+        width: 250px;
+        margin-left: 40px;
+    }
+
+    #btn-copiar {
+        width: 100%;
+    }
+ 
+    footer {
+    	height: 30px;
+  	}
+}
