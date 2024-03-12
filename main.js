@@ -25,12 +25,12 @@ function btnEncriptar() {
 }
 
 function desencriptarLetras(texto){
-    let matrizCodigo = [["enter", "e"], ["imes", "i"], ["ai", "a"], ["ober", "o"], ["ufat", "u"]];
+    let matrizCodigo = [["e", "enter"], ["i","imes"],["a","ai"], ["o","ober"], ["u","ufat"]];
     texto = texto.toLowerCase();
 
-    for(let i = 0 ; i < matrizCodigo.length; i++) {
-        if(texto.includes(matrizCodigo[i][0])){
-            texto = texto.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
+    for(let i = matrizCodigo.length - 1 ; i >= 0; i--) {
+        if(texto.includes(matrizCodigo[i][1])){
+            texto = texto.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0])
         }
     }
     return texto;
