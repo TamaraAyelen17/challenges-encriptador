@@ -224,6 +224,7 @@ footer {
 .p-footer {
     color: #FFFFFF;
     font-size: 16px;
+    font-family: 'Inter', sans-serif;
 }
 
 .github-logo {
