@@ -4,7 +4,7 @@ const image = document.querySelector('.container-der');
 const parrafo = document.querySelector('.contenedor-parrafo');
 
 function encriptarLetras(texto){
-    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+    let matrizCodigo = [["e", "enter"], ["a", "ai"], ["i", "imes"], ["o", "ober"], ["u", "ufat"]];
     texto = texto.toLowerCase();
 
     for(let i = 0 ; i < matrizCodigo.length; i++) {
