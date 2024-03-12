@@ -192,6 +192,22 @@ main {
     display: none;
 }
 
+.mensaje-copiado {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1420px;
+    top: 600px;
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(10, 56, 113, 0.5);
+    font-size: 20px;
+}
+
 
 footer {
     display: flex;
