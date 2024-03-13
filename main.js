@@ -49,7 +49,14 @@ function btnCopiar() {
     mensaje.select();
     
     navigator.clipboard.writeText(mensaje.value).then(function() {
-        console.log('Texto copiado al portapapeles');
+        const mensajeCopiado = document.createElement('div');
+        mensajeCopiado.textContent = '¡Mensaje copiado!';
+        mensajeCopiado.classList.add('mensaje-copiado');
+        document.body.appendChild(mensajeCopiado);
+
+        setTimeout(function() {
+            mensajeCopiado.remove();
+        }, 5000);
     }).catch(function(error) {
         console.error('Error al copiar el texto: ', error);
     });
