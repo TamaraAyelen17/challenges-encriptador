@@ -16,7 +16,7 @@ body {
 
 .logo-header {
     padding-top: 40px;
-    padding-left: 20px;
+    padding-left: 80px;
     width: 6%;
 }
 
@@ -36,7 +36,7 @@ main {
     font-size: 32px;
     width: 680px;
     height: 288px;
-    margin-left: 100px;
+    margin-left: 200px;
     margin-top: 168px;
     cursor: pointer;
     outline: none;
@@ -51,7 +51,7 @@ main {
 .info {
     display: flex;
     margin-top: 180px;
-    margin-left: 100px;
+    margin-left: 200px;
     font-size: 12px;
     color: #495057;
     opacity: 0.8;
@@ -76,7 +76,7 @@ main {
     position: absolute;
     width: 680px;
     height: 67px;
-    left: 180px;
+    left: 280px;
     top: 685px;
 }
 
@@ -114,7 +114,7 @@ main {
     position: absolute;
     width: 400px;
     height: 800px;
-    left: 1000px;
+    left: 1300px;
     top: 40px;
 }
 
@@ -234,7 +234,100 @@ footer {
     margin-right: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+      
+    }
+    
+    .logo-header {
+        width: 10%;
+        padding-left: 10px; 
+        position: absolute; 
+        top: 10px;
+    }
+
+    .container-izq {
+        display: flex;
+        position: absolute;
+        left: 10px;
+        top: 100px;
+    }
+    
+    .ingresar-texto {
+        margin: 40px;
+        width: calc(100% - 230px); 
+        max-width: 90%; 
+    }
+
+    .info {
+        display: flex;
+        position: absolute;
+        top: 300px;
+        margin-left: 30px;
+    }
+
+    .botones {
+        position: static;
+        flex-direction: row;
+        gap: 20px;
+        width: calc(100% - 140px);
+        max-width: 90%;
+        margin-left: 30px;
+        margin-top: 140px;
+    }
+
+    .container-der {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 300px;
+        width: 388px;
+        height: 605px;
+        margin-top: 50px;
+        left: 620px;
+        top: 30px;
+    
+    }
+
+    .derecha {
+        position: absolute;
+        left: 20px;
+        top: 430px;
+    }
+
+    .contenedor-parrafo {
+        margin-bottom: 10px;
+    }
+
+    .contenedor-txtarea {
+        margin-top: 5px; 
+    }
+
+    .mensaje {
+        height: 420px; 
+        background-color: transparent;
+    }
+
+    #btn-copiar {
+        width: 300px;
+        height: 50px;
+        margin-top: 70px;
+    }
+
+    .mensaje-copiado {
+        height: 40px;
+        margin-left: 730px;
+        top: 520px;
+    }
+}
+
+@media (max-width: 768px){
     main {
         margin-left: 50px;
         display: flex;
@@ -250,11 +343,11 @@ footer {
         display: flex;
         position: absolute;
         left: 30px;
-        top: 100px;
+        top: 50px;
     }
 
     .ingresar-texto {
-        margin: 20px auto;
+        margin-top: 50px;
         width: calc(100% - 40px); 
         max-width: 90%; 
     }
@@ -262,7 +355,7 @@ footer {
     .info {
         display: flex;
         position: absolute;
-        top: 200px;
+        top: 260px;
         margin-left: 30px;
     }
 
@@ -273,16 +366,17 @@ footer {
         width: calc(100% - 40px);
         max-width: 90%;
         margin-left: 30px;
+        margin-top: 85px;
     }
 
     .container-der {
         background-image: none;
         width: 688px;
-        height: 170px;
+        height: 200px;
         position: absolute;
         margin-top: 50px;
         left: 50px;
-        top: 550px;
+        top: 556px;
         display: flex;
         flex-direction: column;
     }
@@ -328,7 +422,22 @@ footer {
     #btn-copiar {
         width: 450px;
         height: 50px;
-        margin-top: 15px;
+        margin-top: 40px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+    }
+
+    .mensaje-copiado {
+        height: 60px;
+        margin-left: 300px;
+        top: 630px;
+
     }
 }
 
@@ -341,8 +450,15 @@ footer {
         width: 25%;
     }
 
+    .container-izq {
+        display: flex;
+        position: absolute;
+        left: 30px;
+        top: 80px;
+    }
+
     .info {
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .botones {
@@ -361,14 +477,16 @@ footer {
     .btn-desencriptar {
         width: 90%;
         position: absolute;
-        margin-top: 80px;
+        margin-top: 20px;
         left: 5px;
     }
 
     .container-der {
         position: absolute;
         width: 90%;
+        height: 150px;
         left: 20px;
+        top: 530px;
     }
 
     .contenedor-txtarea {
@@ -406,9 +524,24 @@ footer {
 
     #btn-copiar {
         width: 100%;
+        margin: 0;
     }
  
     footer {
     	height: 30px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
   	}
+
+      .github-logo {
+        width: 20px; 
+    }
+
+    .mensaje-copiado {
+        height: 30px;
+        margin-left: 100px;
+        top: 600px;
+    }
 }
